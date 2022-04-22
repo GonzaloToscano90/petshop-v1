@@ -91,6 +91,20 @@
     .alto {
         grid-row: span 2;
     }
+    // SECCION 3
+    .sec3__container {
+        .sec3__button--push {
+            position: absolute;
+            left: 20px;
+            lottie-player {
+                width: 75px !important;
+                height: 75px !important;
+            }
+        }
+        .sec3__botones {
+            display: none;
+        }
+    }
     // SECCION 4
     .sec4__formulario-container {
         .grid {}
