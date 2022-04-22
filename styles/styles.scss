@@ -589,6 +589,7 @@
         }
         p {
             padding: 0 20px;
+            line-height: 1.6em;
         }
         .sec3__imagen {
             width: auto;
@@ -612,7 +613,10 @@
             column-gap: 16px;
             margin: 10px;
             .sec3__oferta {
-                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 margin-bottom: 33px;
                 padding: 10px;
                 border-radius: 5px;
@@ -621,6 +625,7 @@
                 img {
                     width: 145px;
                     height: 150px;
+                    margin-bottom: 22px;
                 }
                 .sec3__producto--nombre {
                     color: #34384D;
@@ -633,9 +638,15 @@
                     display: flex;
                     justify-content: center;
                 }
+                &:hover {
+                    transition: all 0.3s ease-in-out;
+                    filter: opacity(0.9);
+                    transform: scale(1.04);
+                }
             }
             p {
                 padding-bottom: 20px;
+                line-height: 1.6em;
             }
         }
         .sec3__titulo2 {
@@ -644,15 +655,18 @@
         }
         /*BLOG*/
         .sec3__blog--titulo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
             padding-top: 1.7rem;
             padding-bottom: 1.7rem;
-            text-align: center;
         }
         .sec3__blog--intro {
             padding-top: 1rem;
             padding-bottom: 1rem;
             font-size: 1.2rem;
-            line-height: 1.3em;
+            line-height: 1.6em;
             margin: 11px;
             p {
                 margin-bottom: 7px;
@@ -663,12 +677,6 @@
             background-repeat: no-repeat;
             background-position: bottom;
             padding-bottom: 3rem;
-        }
-        .sec3__conteinerblog {
-            padding-right: 15px;
-            padding-left: 15px;
-            margin-right: auto;
-            margin-left: auto;
         }
         .sec3__divs {
             column-count: 1;
