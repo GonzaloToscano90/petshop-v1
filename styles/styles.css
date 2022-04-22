@@ -448,7 +448,7 @@ h4 {
 }
 
 #ofertas {
-  scroll-margin: 529px;
+  scroll-margin: 470px;
 }
 
 #blog {
@@ -1420,6 +1420,17 @@ h4 {
   }
   .alto {
     grid-row: span 2;
+  }
+  .sec3__container .sec3__button--push {
+    position: absolute;
+    left: 20px;
+  }
+  .sec3__container .sec3__button--push lottie-player {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .sec3__container .sec3__botones {
+    display: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
