@@ -17,6 +17,7 @@
   --color-secondary: #f56e6e;
   --color-white: #FFFFFF;
   --color-black: #34384D;
+  --color-text-black: black;
   --color-text-primary: #ff9999;
   --color-text-secondary: #E1E1E1;
   --color-txbtnprimary: wheat;
@@ -34,6 +35,7 @@
   --color-parrafo: #ffffffea;
   --color-lotie: linear-gradient(to right, #49a09d, #5f2c82);
   --color-nav: wheat;
+  --color-text-black: #FFFFFF;
   --color-txbtnprimary: black;
   --color-clippath: wheat;
   --color-btntheme: wheat;
@@ -235,6 +237,19 @@ h4 {
   color: var(--btn-menuicon);
   line-height: 33px;
   font-size: 1.6rem;
+}
+
+.navigation ul li a .icon h1 {
+  position: absolute;
+  bottom: 32px;
+  right: -2px;
+  font-size: 18px;
+  color: white;
+  background: crimson;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 
 .navigation ul li a .icon .fa-whatsapp {
@@ -695,11 +710,23 @@ h4 {
   border-radius: 4px;
 }
 
+.sec2__container .sec2__articulos .hover-articulo :hover {
+  background-color: crimson;
+  color: white;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+.sec2__container .sec2__articulos .hover-articulo:active {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
 .sec2__container .sec2__publicidad--grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-auto-rows: minmax(145px, auto);
   gap: 15px;
   padding: 20px;
@@ -1092,6 +1119,7 @@ h4 {
 
 .sec4__carrito {
   width: 100%;
+  color: var(--color-black);
 }
 
 .sec4__carrito tr {
@@ -1105,6 +1133,7 @@ h4 {
 }
 
 .sec4__carrito tbody tr {
+  color: var(--color-text-black);
   font-size: 17px;
   display: -ms-grid;
   display: grid;
@@ -1451,23 +1480,23 @@ h4 {
   .sec2__container .sec2__articulos {
     -ms-grid-columns: (minmax(14rem, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-    -webkit-column-gap: 115px;
-            column-gap: 115px;
+    -webkit-column-gap: 13px;
+            column-gap: 13px;
     row-gap: 40px;
   }
   .sec2__container .sec2__articulos .sec2__articulo {
     padding: 1rem;
   }
   .sec2__container .sec2__articulos .sec2__articulo img {
-    width: 283px;
-    height: 255px;
+    width: 250px;
+    height: 260px;
   }
   .sec2__publicidad--grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-auto-rows: minmax(250px, auto);
+    -ms-grid-columns: (minmax(256px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 0;
     grid-auto-flow: dense;
@@ -1530,6 +1559,9 @@ h4 {
     color: var(--color-black);
     padding: 1rem;
     margin: 0 auto;
+  }
+  .sec4__carrito .borrar-curso {
+    right: 400px;
   }
   .boton-vaciar-carrito {
     color: var(--color-txbtnprimary);

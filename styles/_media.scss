@@ -68,22 +68,22 @@
             font-size: 22px;
         }
         .sec2__articulos {
-            grid-template-columns: repeat( auto-fill, minmax(14rem, 1fr));
-            column-gap: 115px;
+            grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+            column-gap: 13px;
             row-gap: 40px;
             .sec2__articulo {
                 padding: 1rem;
                 img {
-                    width: 283px;
-                    height: 255px;
+                    width: 250px;
+                    height: 260px;
                 }
             }
         }
     }
     .sec2__publicidad--grid {
         display: grid;
-        grid-template-columns: repeat( auto-fill, minmax(250px, 1fr));
-        grid-auto-rows: minmax(250px, auto);
+        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+        grid-auto-rows: minmax(200px, auto);
         gap: 20px;
         padding: 0;
         grid-auto-flow: dense;
@@ -147,9 +147,9 @@
         color: var(--color-black);
         padding: 1rem;
         margin: 0 auto;
-        // .borrar-curso {
-        //     // right: 336px;
-        // }
+        .borrar-curso {
+            right: 400px;
+        }
     }
     .boton-vaciar-carrito {
         color: var(--color-txbtnprimary);
