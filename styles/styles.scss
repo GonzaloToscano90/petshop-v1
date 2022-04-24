@@ -423,7 +423,7 @@
     }
     
     #ofertas {
-        scroll-margin: 470px;
+        scroll-margin: 490px;
     }
     
     #blog {
@@ -701,7 +701,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             column-gap: 16px;
-            margin: 10px;
+            margin: 40px 10px;
             .sec3__oferta {
                 display: flex;
                 flex-direction: column;
@@ -959,7 +959,7 @@
         color: white;
         font-weight: bold;
         position: absolute;
-        right: 10px;
+        right: 20px;
         margin-top: -77px;
     }
     
