@@ -245,7 +245,7 @@ h4 {
   right: -2px;
   font-size: 18px;
   color: white;
-  background: crimson;
+  background: #34AB64;
   border-radius: 50%;
   width: 30px;
   height: 30px;
@@ -711,7 +711,7 @@ h4 {
 }
 
 .sec2__container .sec2__articulos .hover-articulo :hover {
-  background-color: crimson;
+  background-color: #34AB64;
   color: white;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
@@ -727,7 +727,7 @@ h4 {
 .sec2__container .sec2__publicidad--grid {
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: minmax(145px, auto);
+  grid-auto-rows: minmax(175px, auto);
   gap: 15px;
   padding: 20px;
   grid-auto-flow: dense;
@@ -1471,6 +1471,9 @@ h4 {
     width: 509px;
     height: 472px;
   }
+  .sec1__container .sec1__iconos {
+    left: 45px;
+  }
   .sec2__container {
     padding: 3px 91px;
   }
@@ -1478,8 +1481,8 @@ h4 {
     font-size: 22px;
   }
   .sec2__container .sec2__articulos {
-    -ms-grid-columns: (minmax(14rem, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    -ms-grid-columns: (minmax(21rem, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
     -webkit-column-gap: 13px;
             column-gap: 13px;
     row-gap: 40px;
@@ -1494,8 +1497,8 @@ h4 {
   .sec2__publicidad--grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(256px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+    -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-auto-rows: minmax(200px, auto);
     gap: 20px;
     padding: 0;
@@ -1538,8 +1541,8 @@ h4 {
     text-align: start;
   }
   .sec3__container .sec3__ofertas {
-    -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
   .sec3__container .sec3__blog--intro {
     width: 50%;
@@ -1561,7 +1564,7 @@ h4 {
     margin: 0 auto;
   }
   .sec4__carrito .borrar-curso {
-    right: 400px;
+    right: 450px;
   }
   .boton-vaciar-carrito {
     color: var(--color-txbtnprimary);
