@@ -24,7 +24,7 @@ list.forEach((item) =>
 allSections.addEventListener("click", (e) => {
 
     const id = e.target.dataset.id;
-    console.log(e.target);
+    // console.log(e.target);
     if (id) {
         // animar los otros botones con los estilos de active
         // sectBtns.forEach((btn)=> {
@@ -48,3 +48,9 @@ themeBtn.addEventListener("click", () => {
     const element = document.body;
     element.classList.toggle('light-mode')
 })
+
+const sonidoAgregar = new Audio();
+sonidoAgregar.src = "./agregar.mp3";
+
+const sonidoVaciar = new Audio();
+sonidoVaciar.src = "./vaciar.mp3";
