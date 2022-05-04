@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- MAPBOX -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' rel='stylesheet' />
@@ -27,7 +26,7 @@
         <section class="section sec1 header active " id="home">
             <div class="sec1__container">
                 <div class="sec1__logo">
-                    <img loading="lazy" src="/img/sec2/logoBlanco.png" alt="">
+                    <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/logoBlanco.png" alt="">
                 </div>
                 <div class="sec1__subtitulo">Bienvenido a nuestro sitio Web</div>
                 <div class="sec1__grid-desktop">
@@ -52,22 +51,20 @@
                 <div class="sec1__iconos">
                     <div class="facebook">
                         <a href="">
-                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                            <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_5bmhbduh.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+                            <img src="img/sec1/facebook.png" alt="iconoFace">
                         </a>
                     </div>
-                    <!-- <div class="twitter">
-                        <a href="">
-                            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                            <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_hdy0htc2.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
-                        </a>
-                    </div> -->
                     <div class="instagram">
+                        <a href="">
+                            <img src="img/sec1/instagram.png" alt="iconoInstagram">
+                        </a>
+                    </div>
+                    <!-- <div class="instagram">
                         <a href="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                             <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_085ixxa8.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
                         </a>
-                    </div>
+                    </div> -->
                     <!-- <div class="tiktok">
                         <a href="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -80,10 +77,15 @@
                             <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_bX9RwO.json" background="transparent" speed=".5" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
                         </a>
                     </div> -->
-                    <div class="whatsapp">
+                    <!-- <div class="whatsapp">
                         <a href="">
                             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                             <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_qnpfavmd.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+                        </a>
+                    </div> -->
+                    <div class="whatsapp">
+                        <a href="">
+                            <img src="img/sec1/whatsapp.png" alt="iconoWhatsapp">
                         </a>
                     </div>
                 </div>
@@ -124,22 +126,6 @@
 
                 <div class="sec2__articulos" id="todos">
 
-                    <div class="sec2__articulo">
-                        <img loading="lazy" src="/img/sec2/Producto1.png" alt="">
-                    </div>
-
-                    <div class="sec2__articulo">
-                        <img loading="lazy" src="/img/sec2/Producto1.png" alt="">
-                    </div>
-
-                    <div class="sec2__articulo">
-                        <img loading="lazy" src="/img/sec2/Producto1.png" alt="">
-                    </div>
-
-                    <div class="sec2__articulo">
-                        <img loading="lazy" src="/img/sec2/Producto1.png" alt="">
-                    </div>
-
                 </div>
 
                 <div class="sec2__publicidad">
@@ -148,10 +134,10 @@
                     </div>
                     <div class="sec2__publicidad--grid">
                         <!-- <div>
-                            <img loading="lazy" src="/img/sec2/anuncio1.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/anuncio1.png" alt="">
                         </div>
                         <div>
-                            <img loading="lazy" src="/img/sec2/anuncio2.jpg" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/anuncio2.jpg" alt="">
                         </div> -->
                         <div class="grid-item ancho" style="background-image: url('/img/sec2/anuncio1.png')"></div>
                         <div class="grid-item" style="background-image: url('/img/sec2/anuncio2.png')"></div>
@@ -171,80 +157,182 @@
 
                     <div class="sec2__articulos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
-                            <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="1" onclick="aumentarNum()">Agregar Al Carrito</a>
-
-
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">Gorro Accesorio Mascota</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
                             </div>
-                        </div>
-                        <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="2" onclick="aumentarNum()">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="3">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="4">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="5">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="6">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="7">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO3</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="8">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripción del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO4</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripción del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO5</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Descripcion del articulo</h3>
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                     </div>
@@ -254,75 +342,123 @@
 
                     <div class="sec2__articulos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="9">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="10">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="11">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="12">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="13">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="14">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="15">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="16">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                     </div>
@@ -332,75 +468,123 @@
 
                     <div class="sec2__articulos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="17">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="18">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="19">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="20">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="21">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="22">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="23">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="24">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                     </div>
@@ -410,77 +594,126 @@
 
                     <div class="sec2__articulos margin-bottom-gatos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="25">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="26">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="27">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="28">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="29">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="30">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="31">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2__articulo--nombre">PRODUCTO</h2>
-                            <span>$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
                             <div class="hover-articulo">
-                                <h3>Descripcion del articulo</h3>
-                                <a onclick="contarClick()" href="#" class="agregar-carrito" id="32">Agregar Al Carrito</a>
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -494,11 +727,6 @@
             <div class="sec3__container">
 
                 <div class="sec3__divlotie">
-
-                    <div class=" sec3__button--push">
-                        <button class="sec3__button"><script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                           <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_doyhajlr.json"  background="transparent"  speed="1"  style="width: 50px; height: 50px;" hover loop  autoplay></lottie-player></button>
-                    </div>
 
                     <div class="sec3__lotie">
                         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -543,77 +771,87 @@
 
                 <div class="sec3__ofertas" id="ofertas">
 
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="/img/sec3/provet-alta-performance-20kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Provet alta perfomance 20kg</h2>
-                        <span>$8.000</span>
-
-                    </div>
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="/img/sec3/provet-cachorro-15kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Provet cachorro 15kg</h2>
-                        <span>$7.000</span>
-
-                    </div>
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/royal-canin-mini-adult-4kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Royal canin adulto 4kg</h2>
-                        <span>$2.000</span>
-
-                    </div>
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/vital-can-premium-adultos-20kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Vital premium 20kg</h2>
-                        <span>$8.000</span>
-
-                    </div>
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="/img/sec3/provet-cachorro-15kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Provet cachorro 15kg</h2>
-                        <span>$7.000</span>
-
-                    </div>
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/royal-canin-dog-hypoallergenic-10kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Royal canin 10kg</h2>
-                        <span>$4.000</span>
-
-                    </div>
-
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/royal-canin-dog-hypoallergenic-10kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Royal canin 10kg</h2>
-                        <span>$4.000</span>
-
+                    <div class="sec3__oferta sec2__articulo">
+                        <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec3/provet-alta-performance-20kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Provet alta perfomance 20kg</h2>
+                        <span class="sec2__articulo--precio">$8000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class=' fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
                     </div>
 
 
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/royal-canin-fit-15kg-wondercat-4kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Royal canin 15kg</h2>
-                        <span>$2.000</span>
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="/img/sec3/provet-cachorro-15kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Provet cachorro 15kg</h2>
+                        <span class="sec2__articulo--precio">$7000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class=' fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
+                    </div>
 
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/royal-canin-mini-adult-4kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Royal canin adulto 4kg</h2>
+                        <span class="sec2__articulo--precio">$2000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
+                    </div>
+
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/vital-can-premium-adultos-20kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Vital premium 20kg</h2>
+                        <span class="sec2__articulo--precio">$8000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
+                    </div>
+
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="/img/sec3/provet-cachorro-15kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Provet cachorro 15kg</h2>
+                        <span class="sec2__articulo--precio">$7000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
+                    </div>
+
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/royal-canin-dog-hypoallergenic-10kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Royal canin 10kg</h2>
+                        <span class="sec2__articulo--precio">$4000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
+                    </div>
+
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/royal-canin-dog-hypoallergenic-10kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Royal canin 10kg</h2>
+                        <span class="sec2__articulo--precio">$4000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta " href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
                     </div>
 
 
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/royal-canin-cat-calm-2kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Royal canin 2kg</h2>
-                        <span>$1.000</span>
-
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/royal-canin-fit-15kg-wondercat-4kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Royal canin 15kg</h2>
+                        <span class="sec2__articulo--precio">$2000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
                     </div>
 
-                    <div class="sec3__oferta">
-                        <img loading="lazy" src="img/sec3/top-nutrition-perro-mediano-adulto-153kg.jpg" alt="">
-                        <h2 class="sec3__producto--nombre">Top nutrition 3kg</h2>
-                        <span>$1.500</span>
 
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/royal-canin-cat-calm-2kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Royal canin 2kg</h2>
+                        <span class="sec2__articulo--precio">$1000.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
+                    </div>
+
+                    <div class="sec3__oferta sec2__articulo">
+                        <img loading="lazy" class="sec2__articulo--imagen" src="img/sec3/top-nutrition-perro-mediano-adulto-153kg.jpg" alt="">
+                        <h2 class="sec3__producto--nombre sec2articulo--nombre">Top nutrition 3kg</h2>
+                        <span class="sec2__articulo--precio">$1500.00</span>
+                        <a onclick="sonidoAgregar.play()" class="agregar-carrito agregar-carrito-oferta" href="#"><i class='fas fa-cart-arrow-down'></i></a>
+                        <h3 class="sec2__articulo--descripcion">descripcion</h3>
                     </div>
 
 
@@ -752,22 +990,48 @@
                     <!-- CARRITO -->
                     <div id="carrito">
 
-                        <table class="sec4__carrito" id="lista-carrito">
-                            <thead>
-                                <tr>
-                                    <th>Imagen</th>
-                                    <th>Nombre</th>
-                                    <th>Precio</th>
-                                    <th>Cantidad</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody></tbody>
-                        </table>
+                        <div class="sec4__carrito" id="lista-carrito">
+                            <div class="carrito__contenedor">
+                                <div class="descripcion">
+                                    <h3>Producto</h3>
+                                    <span><h3>Precio</h3></span>
+                                    <h3>Cantidad</h3>
+                                </div>
+                                <!-- <div class="carrito__contenido">
+                                    <div class="flex-colum">
+                                        <div>
+                                            <h2>Nombre</h2>
+                                        </div>
+                                        <div class="flex-row">
+                                            <img src="./img/sec2/Producto1.png" style="width: 70px;height: 70px;">
+                                            <div>Producto esta compeusto por jbasbalhbsahbs</div>
 
+                                        </div>
+                                    </div>
+                                    <div>$200</div>
+                                    <div>
+                                        <input type="number" value="1" style="width: 50px; height: 20px;" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="borrar-curso" type='button'>X</button>
+                                </div> -->
+                            </div>
 
-                        <a href="#" id="vaciar-carrito" class="boton-vaciar-carrito sec4__carrito">Vaciar Carrito</a>
+                        </div>
 
+                        <div class="total-vaciar">
+                            <h2 class="compraSumaTotal"> Total a pagar: 0$ </h2>
+                            <a onclick="sonidoVaciar.play()" href="#" id="vaciar-carrito" class="boton-vaciar-carrito ">Vaciar Carrito</a>
+                        </div>
+
+                        <div class="whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=+543886301416&text=Hola%20Gonzalo!%20" target="_blank">
+                                <h3>Captura una imagen de tu pedido y envialo a nuestro whatsapp!</h3>
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_qnpfavmd.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -779,15 +1043,18 @@
                     <img loading="lazy" src="/img/logo.png" alt="imgLogo">
                 </div>
 
-                <div class="sec5-info">
-                    <div class="back-img">
-                        <img loading="lazy" src="/img/sec5/imgTienda.jpg" alt="">
+                <div class="sec5-info-contenido">
+                    <div class="sec5__header">
+                        <div class="back-img">
+                            <img loading="lazy" src="/img/sec5/imgTienda.jpg" alt="">
+                        </div>
+                        <div class="sec5-info__iconos">
+                            <i class='fas fa-map-marked-alt'><span>Libertador General San Martín</span> </i>
+                            <i class='fas fa-clock'><span>Abierto 08:00 a 13:00 y de 16:00 a 21:00</i></span>
+                        </div>
                     </div>
-                    <div class="sec5-info__iconos">
-                        <i class='fas fa-map-marked-alt'><span>Libertador General San Martín</span> </i>
-                        <i class='fas fa-clock'><span>Abierto 08:00 a 13:00 y de 16:00 a 21:00</i></span>
-                    </div>
-                    <div class="sec5-info">
+
+                    <div class="sec5-info ">
                         <h4>Resumen de opiniones</h4>
                         <div class="sec5-info__flex">
                             <div class="sec5-info__barras">
@@ -914,10 +1181,11 @@
             </li>
             <li class="list" data-id="carrito-de-compras">
                 <a href="#" data-id="carrito-de-compras">
-                    <span class="icon" data-id="carrito-de-compras"><h1 data-id="carrito-de-compras" id="contador">0</h1><i data-id="carrito-de-compras"
-                            class='fas fa-cart-arrow-down'></i></span>
+                    <span class="icon " data-id="carrito-de-compras"><i data-id="carrito-de-compras"
+                            class='fas fa-cart-arrow-down'></i><div data-id="carrito-de-compras" class="contador">$0</div></span>
 
                     <span class="text" data-id="carrito-de-compras">Carrito</span>
+
                 </a>
             </li>
             <li class="list" data-id="ubicacion">
@@ -935,7 +1203,6 @@
         <i class='fas fa-moon'></i>
     </div>
 
-    <!-- Boton LightMode -->
     <script src="./js/app.js"></script>
 
 
@@ -946,7 +1213,8 @@
 
     <!-- CARRITO -->
     <script src='./js/carrito.js'></script>
-    <script src='./js/contadorCarrito.js'></script>
+    <!-- <script src='./js/contadorCarrito.js'></script> -->
+
 
 
 </body>

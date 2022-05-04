@@ -61,7 +61,9 @@
             }
         }
         .sec1__iconos {
-            left: 45px;
+            bottom: 96px;
+            gap: 57px;
+            left: 25px;
         }
     }
     // SECCION2
@@ -76,9 +78,14 @@
             row-gap: 40px;
             .sec2__articulo {
                 padding: 1rem;
+                width: 285px;
+                height: 440px;
                 img {
                     width: 250px;
                     height: 260px;
+                }
+                .hover-articulo {
+                    height: 288px;
                 }
             }
         }
@@ -145,18 +152,43 @@
         }
     }
     // SECCION 4
-    .sec4__carrito {
-        width: 54%;
-        color: var(--color-black);
-        padding: 1rem;
-        margin: 0 auto;
-        .borrar-curso {
-            right: 450px;
+    .sec4__container {
+        height: 100vh;
+        .sec4__titulo {
+            display: flex;
+            justify-content: center;
+        }
+        .sec4__carrito {
+            width: 54%;
+            color: var(--color-black);
+            padding: 1rem;
+            margin: 0 auto;
+            .carrito__contenedor {
+                .borrar-curso {
+                    right: 410px;
+                }
+            }
         }
     }
     .boton-vaciar-carrito {
         color: var(--color-txbtnprimary);
         width: 195px;
         height: 40px;
+    }
+    // SECCION 5
+    .sec5__container {
+        min-height: 162vh;
+        .sec5-info-contenido {
+            flex-direction: row-reverse;
+            .back-img {
+                height: 400px;
+            }
+            .sec5-info {
+                margin-top: 50px;
+            }
+        }
+        .sec5__map {
+            height: 469px;
+        }
     }
 }
