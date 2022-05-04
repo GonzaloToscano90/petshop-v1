@@ -247,10 +247,11 @@ h4 {
 .navigation ul li a .icon .contador {
   position: absolute;
   bottom: 21px;
-  left: -4px;
+  left: -10px;
   font-size: 11px;
   font-weight: bold;
-  color: wheat;
+  color: var(--btn-menuicon);
+  width: 45px;
 }
 
 .navigation ul li a .text {
@@ -1726,10 +1727,10 @@ h4 {
     row-gap: 33px;
     margin-top: -105px;
   }
-  sec4__container {
+  .sec4__container {
     height: 100vh;
   }
-  sec4__container .sec4__titulo {
+  .sec4__container .sec4__titulo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1737,13 +1738,13 @@ h4 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  sec4__container .sec4__carrito {
+  .sec4__container .sec4__carrito {
     width: 54%;
     color: var(--color-black);
     padding: 1rem;
     margin: 0 auto;
   }
-  sec4__container .sec4__carrito .carrito__contenedor .borrar-curso {
+  .sec4__container .sec4__carrito .carrito__contenedor .borrar-curso {
     right: 410px;
   }
   .boton-vaciar-carrito {
