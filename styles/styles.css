@@ -1045,10 +1045,11 @@ h4 {
 
 .sec3__container .sec3__ofertas .sec3__oferta a {
   color: white;
-  border-radius: 50%;
-  background: crimson;
-  width: 50px;
-  height: 50px;
+  border-radius: 10%;
+  background: teal;
+  width: 104px;
+  height: 37px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1228,7 +1229,8 @@ h4 {
 }
 
 .sec4__carrito .carrito__contenedor .carrito__contenido .precioArticuloDiv {
-  margin-left: 20px;
+  margin-left: -11px;
+  text-align: center;
 }
 
 .sec4__carrito .carrito__contenedor .carrito__contenido .flex-colum {
@@ -1330,6 +1332,10 @@ h4 {
 .whatsapp h3 {
   color: var(--color-parrafo);
   text-align: center;
+}
+
+.whatsapp lottie-player {
+  margin-left: 46%;
 }
 
 .sec5__container {
