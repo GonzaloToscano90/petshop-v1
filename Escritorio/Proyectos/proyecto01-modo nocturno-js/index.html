@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo Nocturno</title>
+</head> 
+ 
+<style>
+
+    nav {
+        background:url(img/playa-de-maldivas_5120x2880_xtrafondos.com.jpg)center center no-repeat; /*centrar un elemento y colocar un fondo*/
+        background-size: cover;   /*especifica el tamaño de las imágenes de fondo*/
+        justify-content: center !important; /* distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor.*/
+    }
+
+    img {
+        margin: 15px; /* establece el margen para los cuatro lados.*/
+
+    }
+
+    .parrafo1 img,
+    .parrafo3 img {
+        float:left;  /* float: ubica un elemento al lado izquierdo o derecho de su contenedor,
+                       permitiendo que los elementos de texto y en línea aparezcan a su costado.*/
+    }
+
+    .parrafo2 img {
+        float: right;
+    }
+
+    input[type="checkbox"] {
+        -webkit-appearance:none; /*  apariencia (de ninguno) por defecto */
+        width:100px;
+        height: 50px ;
+        position: relative; /* posiciona al elemento por delante de los demas elementos*/
+        background: url(img/cancun-en-mexico_3840x2160_xtrafondos.com.jpg) center center no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+    }
+
+    input[type="checkbox"]::before { /*crea un  pseudoelemento  que es el primer hijo del elemento seleccionado. Es usado normalmente para agregar contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.*/
+       content: "";
+       background: rgb(244, 189, 33);
+       border-radius: 50%;
+       width: 50px;  /*alto*/
+       height: 50px; /*ancho*/
+       position: absolute;
+       top:0;
+       left:0;
+    }
+
+    input[type="checkbox"]:checked {
+        background-image: url(img/galaxia-detras-de-montana-rocosa_7360x4140_xtrafondos.com.jpg);
+    }
+    
+
+    input[type="checkbox"]:checked::before {
+        transition:translate(100%);
+        background-color: #222d5a;
+       
+    }
+    
+
+
+</style>
+
+<script>
+   //forma basica
+
+  //  const botonNocturno = document.getElementById("input-modo-oscuro");
+  //  const cuerpoHTML = document.getElementById("modo-oscuro")
+
+
+    //botonNocturno.onclick=()=>{
+        
+    //    if(botonNocturno.checked){
+    //        cuerpoHTML.classList.add("modo-oscuro");
+    //    } else {
+    //        cuerpoHTML.classList.remove("modo-oscuro");
+    //    }
+  // };
+  
+  const botonNocturno = document.getElementById("input-modo-oscuro");
+    const cuerpoHTML = document.getElementById("modo-oscuro");
+    const Cajaverificadora = x =>({
+        x,isChecked:(f, g) => x? f(): g(),
+    });
+
+    const addClass = (clase) => cuerpoHTML.classList.add(clase);
+    const removeClass = (clase) => cuerpoHTML.classList.remove(clase);
+    botonNocturno.onclick=()=> 
+    Cajaverificadora(botonNocturno.checked).isChecked(
+        () =>addClass("modo-oscuro"),
+        () => removeClass("modo-oscuro")
+        );
+
+
+
+</script>
+
+<body id="modo-oscuro">
+    <nav class="navbar navbar-light"><input type="checkbox" name="" id="input-dark-mode"></nav>
+
+    <section>
+
+        <div class="parrafo1">
+
+            <img src="img/colleagues-giving-fist-bump.jpg" width="500" alt="">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam. Repudiandae blanditiis
+                 id error ullam sint atque adipisci rerum magni ad dolor eaque, earum labore 
+                quia! Debitis mollitia ratione aperiam repellat tempore labore, veniam impedit facilis quisquam, consectetur dicta. Et?
+            </p>
+
+        </div>
+
+        <div class="parrafo2">
+
+            <img src="img/businessman-touching-the-tip-of-bar-chart.jpg" width="500" alt="">
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam. Repudiandae blanditiis
+                 id error ullam sint atque adipisci rerum magni ad dolor eaque, earum labore 
+                quia! Debitis mollitia ratione aperiam repellat tempore labore, veniam impedit facilis quisquam, consectetur dicta. Et?
+            </p>
+
+        </div>
+
+        <div class="parrafo3">
+
+            <img src="img/professional-it-developer-working-at-home.jpg" width="500" height="300px" alt="">
+
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam. Repudiandae blanditiis
+                 id error ullam sint atque adipisci rerum magni ad dolor eaque, earum labore 
+                quia! Debitis mollitia ratione aperiam repellat tempore labore, veniam impedit facilis quisquam, consectetur dicta. Et?
+            </p>
+
+        </div>
+
+    </section>
+    
+
+</body>
+</html>
