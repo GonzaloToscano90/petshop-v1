@@ -1,186 +1,88 @@
-    html,
-    body {
-        background-image: url('imagenes/fondo.jpg') !important;
-        color: white !important;
-        font-family: 'Rubik', sans-serif;
-    }
-    
-    .centrar-texto {
-        text-align: center;
-    }
-    
-    .header-app {
-        width: 100%;
-        background-image: url('imagenes/luna.jpg');
-        height: 1000px;
-        background-color: rgba(0, 0, 0, .7);
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: auto;
-        margin-bottom: 50px;
-    }
-    
-    .menu-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-    
-    .menu-items {
-        width: 50%;
-    }
-    
-    .icono {}
-    
-    .enlaces {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        padding-top: 18px;
-    }
-    
-    .boton-menu {
-        border: 1px solid white;
-        background-color: transparent;
-        color: white;
-        width: 120px;
-        height: 40px;
-    }
-    
-    .boton-menu:hover {
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
-    
-    .enlaces-adorno {
-        color: white;
-        text-decoration: none;
-    }
-    
-    .enlaces-adorno:hover {
-        color: white;
-    }
-    
-    .header-informacion {
-        padding: 60px;
-        width: 600px;
-    }
-    
-    .header-titulo {
-        font-weight: bold;
-        font-size: 80px;
-    }
-    
-    .header-texto {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        letter-spacing: 1px;
-    }
-    
-    .boton-header {
-        margin-top: 20px;
-        background: #0197d6;
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 2px;
-        color: white;
-        font-weight: bold;
-    }
-    
-    .boton-header:hover {
-        filter: opacity(0.9);
-        transform: scale(1.04);
-    }
-    
-    .header-boxs {
-        width: 100%;
-        height: 300px;
-        color: black;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .box-header {
-        padding: 20px 0px;
-        width: 100%;
-        height: 200px;
-        background-color: #0c0f14;
-        color: white;
-        text-align: center;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    }
-    
-    .box-texto {
-        display: flex;
-        justify-content: center;
-        gap: 6px;
-        font-size: 26px;
-        font-weight: bold;
-    }
-    /*contenedor*/
 
-    .contenedor{
-      padding-left: 60px;
-      padding-right: 60px;
-      width: 100%;
-    }
 
-    
+html,
+body {
+    background-image: url('imagenes/fondo.jpg') !important;
+    color: white !important;
+    font-family: 'Rubik', sans-serif;
+}
 
-    .content-informacion-A, .content-informacion-B{
-        display: flex;
-        padding-bottom: 100px;
-       
-        
-    }
-    .content-titulo{
-        font-weight: bold;
-        font-size: 42px;
-    }
+.centrar-texto {
+    text-align: center;
+}
 
-    .border-A, .border-B { 
-        border-left: thick double #32a1ce;
-    }
-    
-    span {
-        padding-left: 10px;
-    }
-    .texto-p{
-        padding-top: 10px;
-       letter-spacing: 1px;
-    }
-    .image-A{
-        padding-left: 60px;
-    }
-    .image-B{
-        padding-right: 60px;
-    }
-    .IMG-A, .IMG-B, .IMG-C{
-         border-radius:5px;
-    }
-    .texto-GC{
-        text-align: center;
-    }
+.header-app {
+  width: 100%;
+   background:linear-gradient(rgba(5, 6, 10, 0.55), rgba(5, 7, 12, 0.85)), url(./imagenes/planeta-tierra-vista-desde-la-luna-3339.jpg) no-repeat;
+   height: 1398px;
+    background-size: cover;
+    margin: auto;
+   
+}
 
-    .titulo-global{
-        text-align: center;
-    }
-    .global-p{
-        text-align: center;
-        padding-top: 10px;
-    padding-bottom: 80px;
+.menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.menu-items {
+    width: 50%;
+}
+
+.icono {}
+
+.enlaces {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding-top: 18px;
+}
+
+.boton-menu {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 120px;
+    height: 40px;
+}
+
+.boton-menu:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+.enlaces-adorno {
+    color: white;
+    text-decoration: none;
+}
+
+.enlaces-adorno:hover {
+    color: white;
+}
+
+.header-informacion {
+    padding: 60px;
+    width: 600px;
+}
+
+.header-titulo {
+    font-weight: bold;
+    font-size: 80px;
+}
+
+.header-texto {
+    padding-top: 10px;
+    padding-bottom: 10px;
     letter-spacing: 1px;
-    padding-left: 146px;
-    padding-right: 146px;
-    }
+}
 
-    .boton-content-A{
-        margin-top: 92px;
+.boton-header {
+    margin-top: 20px;
     background: #0197d6;
     width: 150px;
     height: 40px;
@@ -188,25 +90,223 @@
     border-radius: 2px;
     color: white;
     font-weight: bold;
-    font-size: 15px;
-    }
+}
 
-    .boton-content-B {
-        margin-top: 133px;
-        background: #0197d6;
-        width: 150px;
-        height: 40px;
-        border: none;
-        border-radius: 2px;
-        color: white;
-        font-weight: bold;
-        font-size: 15px;
-    }
-    .image-global{display: flex;
-        justify-content: center;
-        padding-bottom: 70px;
-    }
+.boton-header:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
 
+.header-boxs {
+    width: 100%;
+    height: 300px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    margin-top: 350px;
+}
+
+.box-header {
+    padding: 20px 0px;
+    width: 100%;
+    height: 200px;
+    background-color: #0c0f14;
+    color: white;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.box-texto {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+   /*contenedor*/
+
+   .contenedor{
+    width: 100%;
+    padding: 0px 60px 0px 60px;
+    
+  }
+
+  .content-informacion-a{
+     background:linear-gradient(rgba(5, 7, 12, 0.85), rgba(2, 3, 4, 3.95)), url(./imagenes/planeta-tierra-vista-desde-la-luna-33399.jpg) no-repeat;
+      background-size: cover;
+      margin-bottom: 50px;
+  }
+
+  
+
+  .content-informacion-a, .content-informacion-b{
+      display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 40px;
+     width: 100%;
+     
+  }
+
+  .content-texto{
+  
+      margin: 9px;
+  }
+  .content-titulo{
+      font-weight: bold;
+      font-size: 34px;
+  }
+  .texto-gc{
+      text-align: center;
+  }
+
+  .border-cnt{ 
+      border-left: thick double #32a1ce;
+      margin: auto;
+      margin-bottom: 20px;
+      margin-top: 40px;
+  }
+  
+  span {
+      padding-left: 10px;
+  }
+  .texto-p{
+      padding-top: 10px;
+      letter-spacing: 1px;
+  }
+  .image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      padding: 5px;
+  }
+
+  
+  .img-a, .img-b, .img-c{
+       border-radius:5px;
+  }
+  .global-coverage{
+      padding-top: 114px;
+  }
+  
+
+  .boton-content{
+  background: #0197d6;
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  }
+
+   .boton
+   -content-a:hover {
+      filter: opacity(0.9);
+      transform: scale(1.04);
+  }
+  .image-global{display: flex;
+      justify-content: center;
+      padding-bottom: 70px;
+  }
+ 
+  @media screen and  (max-width:768px){
+
+         .contenedor{
+          display: block;
+          width: 100%;
+          margin:auto;
+          padding: 0px 20px 0px 20px;
+         }
+          .content-informacion-a, .content-informacion-b{
+              display: block;
+             justify-content:center;
+             align-items: center;
+             text-align: center;
+             width: 100%;
+             
+          }
+      
+          .content-texto{
+            margin: auto;
+            text-align: center;
+            /* padding: 5px; */
+            margin-bottom: 20px;
+          
+              
+          }
+          .content-titulo{
+              font-weight: bold;
+              font-size: 24px;
+          }
+          .texto-gc{
+              text-align: center;
+          }
+
+         .border-cnt{
+            text-align: left;
+            margin-top: 40px;
+         }
+      
+          .border-color{ 
+              color:#666f73;
+          }
+
+          
+          span {
+              padding-left: 10px;
+          }
+          .texto-p{
+            text-align: center;
+            /* padding-top: 10px; */
+            letter-spacing: 1px;
+            padding-bottom: 20px;
+    
+          }
+
+         .image{
+           display: block;
+           justify-content: center;
+           align-items: center;
+           padding: 5px;
+         }
+
+  
+         .img-a, .img-b, .img-c{
+             border-radius:5px;
+             width: 100%;
+         }
+        .global-coverage{
+           padding-top: 29px;
+         }
+  
+
+        .boton-content{
+           background: #0197d6;
+           width: 158px;
+           height: 35px;
+           border: none;
+           border-radius: 20px;
+           color: white;
+           font-weight: bold;
+           font-size: 15px;
+         }
+
+        .boton-content-a:hover {
+           filter: opacity(0.9);
+           transform: scale(1.04);
+        }
+       .image-global{display: block;
+           justify-content: center;
+           
+        }
+  }
+    
+    
     .custommers {
         width: 100%;
     }
