@@ -1,9 +1,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZ29uemFsb2VtbSIsImEiOiJjbDF6bG8yNjgwbnY5M2JwNnR0bnRxbDZrIn0.QTHJyt2cNWkufi6-2L-QCA';
 const map = new mapboxgl.Map({
     container: 'map', // container ID
-    style: 'mapbox://styles/mapbox/satellite-v9', // style URL
-    center: [-64.78086185351374, -23.784548492262477], //long, lat
-    zoom: 16 // starting zoom
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-65.29687293029489, -24.195637453672766], //long, lat
+    zoom: 14 // starting zoom
 });
 
 const layerList = document.getElementById('menu');
@@ -20,8 +20,10 @@ element.className = 'marker'
 
 let marker = new mapboxgl.Marker(element)
     .setLngLat({
-        lng: -64.78086185351374,
-        lat: -23.784548492262477
+        lng: -65.29687293029489,
+        lat: -24.195637453672766
+
+
     })
     .addTo(map)
 

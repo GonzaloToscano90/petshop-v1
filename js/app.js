@@ -1,9 +1,15 @@
+// PRELOADER
+window.addEventListener("load", function() {
+    document.getElementById("loader").classList.toggle("loader2");
+})
+
 // MENU Y SECCION ACTIVE 
 const sections = document.querySelectorAll(".section");
 const list = document.querySelectorAll('.list');
 const sectBtns = document.querySelectorAll(".navigation");
 const sectBtn = document.querySelectorAll(".indicator");
 const allSections = document.querySelector(".main-content");
+
 
 
 

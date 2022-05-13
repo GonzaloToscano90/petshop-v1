@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MenuMagic</title>
+    <title>TiendaParaMascotas</title>
     <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" k href="https://fonts.googleapis.com/css2?family=Rob
     o   to:wght@300;500;900&display=swap" rel="stylesheet">
@@ -20,13 +20,26 @@
 
 </head>
 
-<body class="main-content">
-    <!-- HOLA FER -->
+<body class="main-content hidden">
+
+    <div class="loader" id="loader">
+        <img src="img/logo.jpg" alt="logo" style="border-radius: 50%;">
+        <!-- //spinner// -->
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <img src="img/lionWeb.png" alt="preloader">
+        </div>
+
+    </div>
     <main>
         <section class="section sec1 header active " id="home">
             <div class="sec1__container">
                 <div class="sec1__logo">
-                    <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/logoBlanco.png" alt="">
+                    <img class="sec2__articulo--imagen" loading="lazy" src="/img/logoBlanco.png" alt="">
                 </div>
                 <div class="sec1__subtitulo">Bienvenido a nuestro sitio Web</div>
                 <div class="sec1__grid-desktop">
@@ -50,7 +63,7 @@
 
                 <div class="sec1__iconos">
                     <div class="facebook">
-                        <a href="">
+                        <a href="https://www.facebook.com/mascotajujuy/" target="blank">
                             <img src="img/sec1/facebook.png" alt="iconoFace">
                         </a>
                     </div>
@@ -84,7 +97,7 @@
                         </a>
                     </div> -->
                     <div class="whatsapp">
-                        <a href="">
+                        <a href="https://api.whatsapp.com/send?phone=+543886822862&text=Hola%20TPM!%20" target="_blank">
                             <img src="img/sec1/whatsapp.png" alt="iconoWhatsapp">
                         </a>
                     </div>
@@ -112,13 +125,13 @@
                         <a href="#accesorios">Accesorios</a>
                     </div>
                     <div class="sec2__boton">
-                        <a href="#alimentos">Alimentos</a>
+                        <a href="#alimentos">Alimentos gral.</a>
                     </div>
                     <div class="sec2__boton">
-                        <a href="#perros">Perros</a>
+                        <a href="#perros">Alimento perros</a>
                     </div>
                     <div class="sec2__boton">
-                        <a href="#gatos">Gatos</a>
+                        <a href="#gatos">alimento gatos</a>
                     </div>
                 </div>
 
@@ -128,18 +141,18 @@
 
                 </div>
 
-                <div class="sec2__publicidad">
+                <!-- <div class="sec2__publicidad">
                     <div class="titulos">
                         <h2>Productos Recomendados</h2>
                     </div>
-                    <div class="sec2__publicidad--grid">
-                        <!-- <div>
+                    <div class="sec2__publicidad--grid"> -->
+                <!-- <div>
                             <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/anuncio1.png" alt="">
                         </div>
                         <div>
                             <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/anuncio2.jpg" alt="">
                         </div> -->
-                        <div class="grid-item ancho" style="background-image: url('/img/sec2/anuncio1.png')"></div>
+                <!-- <div class="grid-item ancho" style="background-image: url('/img/sec2/anuncio1.png')"></div>
                         <div class="grid-item" style="background-image: url('/img/sec2/anuncio2.png')"></div>
                         <div class="grid-item alto" style="background-image: url('/img/sec2/anuncio3.png')"></div>
                         <div class="grid-item alto" style="background-image: url('/img/sec2/anuncio4.png')"></div>
@@ -149,7 +162,7 @@
 
 
                     </div>
-                </div>
+                </div> -->
 
                 <div id="lista-articulos">
                     <!-- ACCESORIOS -->
@@ -157,9 +170,9 @@
 
                     <div class="sec2__articulos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">Gorro Accesorio Mascota</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto1.png" alt="">
+                            <h2 class="sec2articulo--nombre">Mochila Transportadora</h2>
+                            <span class="sec2__articulo--precio">$9790</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -167,14 +180,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Mochila Perro Gato Cápsula Transportadora Mascota Acrílico</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto2.png" alt="prod2">
+                            <h2 class="sec2articulo--nombre">Bebedero Y Comedero</h2>
+                            <span class="sec2__articulo--precio">$3350</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -182,14 +195,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Bebedero Y Comedero Automático Dispenser 2 En 1 Mascotas</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto3.png" alt="prod3">
+                            <h2 class="sec2articulo--nombre">Comedero Bebedero</h2>
+                            <span class="sec2__articulo--precio">$1100</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -197,14 +210,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Comedero Bebedero Plato Acero Inoxidable Perro Gato 400ml</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto4.png" alt="prod4">
+                            <h2 class="sec2articulo--nombre">Collar Para Perros</h2>
+                            <span class="sec2__articulo--precio">$1230</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -212,14 +225,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Collar Para Perros Marvel S- M - Petit Pet Shop</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto5.png" alt="">
+                            <h2 class="sec2articulo--nombre">Arnes Acolchado</h2>
+                            <span class="sec2__articulo--precio">$1250</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -227,14 +240,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Arnes Acolchado Premium Trixie M 45-80cm 25mm Petit Pet Shop</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO2</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto6.png" alt="">
+                            <h2 class="sec2articulo--nombre">Bebedero</h2>
+                            <span class="sec2__articulo--precio">$300</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -242,14 +255,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Bebedero Para Colibri Picaflor Comedero Aves Nectar Elpe</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO3</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto7.png" alt="">
+                            <h2 class="sec2articulo--nombre">Arnes-bozal</h2>
+                            <span class="sec2__articulo--precio">$1100</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -257,29 +270,29 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripción del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Arnes-bozal Trixie Xl Perros Entrenamiento- Petit Pet Shop</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO4</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto8.png" alt="">
+                            <h2 class="sec2articulo--nombre">Juguete Pelota</h2>
+                            <span class="sec2__articulo--precio">$440</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
-                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-text">Agregar al Carrito</span>
                                     <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripción del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Juguete Pelota Hierba Gatera Catnip Gatos- Petit Pet Shop</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO5</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto9.png" alt="">
+                            <h2 class="sec2articulo--nombre">Collar Isabelino Cono</h2>
+                            <span class="sec2__articulo--precio">$2298</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -287,14 +300,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Collar Isabelino Cono Perros Grandes Con Borde Proteccion N4</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/accesorios/producto10.png" alt="">
+                            <h2 class="sec2articulo--nombre">Pelota Dental</h2>
+                            <span class="sec2__articulo--precio">$760</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -302,39 +315,10 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Pelota Dental Mediana Sabor Menta Snack- Petit Pet Shop</h3>
                             </div>
                         </div>
-                        <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
-                            <div class="btn-con agregar-carrito">
-                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
-                                    <span class="btn-text">Agregar Al Carrito</span>
-                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
-                                </a>
-                            </div>
-                            <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
 
-                            </div>
-                        </div>
-                        <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
-                            <div class="btn-con agregar-carrito">
-                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
-                                    <span class="btn-text">Agregar Al Carrito</span>
-                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
-                                </a>
-                            </div>
-                            <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
-
-                            </div>
-                        </div>
                     </div>
 
                     <!-- ALIMENTOS -->
@@ -342,9 +326,9 @@
 
                     <div class="sec2__articulos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento1.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento Maintenance Criadores</h2>
+                            <span class="sec2__articulo--precio">$2922</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -352,14 +336,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Alimento Maintenance Criadores para perro adulto todos los tamaños sabor carne y pollo en bolsa de 22 kg</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento2.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento Dogpro</h2>
+                            <span class="sec2__articulo--precio">$2790</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -367,14 +351,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Alimento Balanceado Premium Dogpro Reduced Calories 7,5kg</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento3.png" alt="alim3">
+                            <h2 class="sec2articulo--nombre">Alimento Hamster Jerbo</h2>
+                            <span class="sec2__articulo--precio">$1445</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -382,29 +366,29 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Mezcla Alimento Super Premium Hamster Jerbo Topo Ruso X 2kg</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento4.png" alt="">
+                            <h2 class="sec2articulo--nombre">ALIMENTO4</h2>
+                            <span class="sec2__articulo--precio">$2775</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
-                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-text">Alimento Canario</span>
                                     <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Bizcocho Con Huevo Canarium Plus X 5 Kgrs</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento5.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento Aves</h2>
+                            <span class="sec2__articulo--precio">$3650</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -412,14 +396,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Alimento Aves Pajaros Canarios Bizcocho Nutribiz X 2 Unid</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento6.png" alt="">
+                            <h2 class="sec2articulo--nombre">Heno para Conejo</h2>
+                            <span class="sec2__articulo--precio">$900</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -427,14 +411,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Heno De Alfalfa En Hebras Para Conejo, Cobayos X 4 Kilos.</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento7.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento Seco para Gatos</h2>
+                            <span class="sec2__articulo--precio">$4330</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -442,14 +426,14 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Whiskas Alimento Seco Mix De Carnes Gato Castrado 10 Kg</h3>
 
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto3.png" alt="">
-                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
-                            <span class="sec2__articulo--precio">$20</span>
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento8.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento Royal gato adulto</h2>
+                            <span class="sec2__articulo--precio">$5815</span>
                             <div class="btn-con agregar-carrito">
                                 <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
                                     <span class="btn-text">Agregar Al Carrito</span>
@@ -457,7 +441,37 @@
                                 </a>
                             </div>
                             <div class="hover-articulo">
-                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+                                <h3 class="sec2__articulo--descripcion">Alimento Royal Canin Club Performance para gato adulto sabor mix en bolsa de 7.5 kg</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento9.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento para Gallinas</h2>
+                            <span class="sec2__articulo--precio">$1999</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Alimento En Grano Especial De Gallinas</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentos/alimento10.png" alt="">
+                            <h2 class="sec2articulo--nombre">Alimento Para Equinos</h2>
+                            <span class="sec2__articulo--precio">$3750</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Alimento Para Equinos Equidiet Haras X 25 Kilos</h3>
 
                             </div>
                         </div>
@@ -468,7 +482,37 @@
 
                     <div class="sec2__articulos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div style="scroll-snap-align: initial;" class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div style="scroll-snap-align: initial;" class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -483,7 +527,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -498,7 +542,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -513,7 +557,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -528,7 +572,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -543,7 +587,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -558,7 +602,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -573,7 +617,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoPerros.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -594,7 +638,7 @@
 
                     <div class="sec2__articulos margin-bottom-gatos">
                         <div style="scroll-snap-align: initial;" class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -609,7 +653,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -624,7 +668,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -639,7 +683,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -654,7 +698,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -669,7 +713,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -684,7 +728,7 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -699,7 +743,37 @@
                             </div>
                         </div>
                         <div class="sec2__articulo">
-                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/Producto2.png" alt="">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
+                            <h2 class="sec2articulo--nombre">PRODUCTO</h2>
+                            <span class="sec2__articulo--precio">$20</span>
+                            <div class="btn-con agregar-carrito">
+                                <a onclick="sonidoAgregar.play()" class="main-btn" href="#">
+                                    <span class="btn-text">Agregar Al Carrito</span>
+                                    <span class="btn-icon"><i class='fas fa-cart-arrow-down'></i></span>
+                                </a>
+                            </div>
+                            <div class="hover-articulo">
+                                <h3 class="sec2__articulo--descripcion">Aqui va una descripcion del articulo</h3>
+
+                            </div>
+                        </div>
+                        <div class="sec2__articulo">
+                            <img class="sec2__articulo--imagen" loading="lazy" src="/img/sec2/alimentoGatos.png" alt="">
                             <h2 class="sec2articulo--nombre">PRODUCTO</h2>
                             <span class="sec2__articulo--precio">$20</span>
                             <div class="btn-con agregar-carrito">
@@ -1015,6 +1089,7 @@
                                 </div>
                                 <div>
                                     <button class="borrar-curso" type='button'>X</button>
+                                    <img src="img/cancelado.png" alt="cancelar">
                                 </div> -->
                             </div>
 
@@ -1026,7 +1101,7 @@
                         </div>
 
                         <div class="whatsapp">
-                            <a href="https://api.whatsapp.com/send?phone=+543886301416&text=Hola%20Gonzalo!%20" target="_blank">
+                            <a href="https://api.whatsapp.com/send?phone=+543886822862&text=Hola%20TPM!%20" target="_blank">
                                 <h3>Captura una imagen de tu pedido y envialo a nuestro whatsapp!</h3>
                                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
                                 <lottie-player src="https://assets2.lottiefiles.com/private_files/lf30_qnpfavmd.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
@@ -1046,10 +1121,11 @@
                 <div class="sec5-info-contenido">
                     <div class="sec5__header">
                         <div class="back-img">
-                            <img loading="lazy" src="/img/sec5/imgTienda.jpg" alt="">
+                            <img loading="lazy" src="/img/sec5/imgtiendaTPM.jpg" alt="">
                         </div>
                         <div class="sec5-info__iconos">
-                            <i class='fas fa-map-marked-alt'><span>Libertador General San Martín</span> </i>
+                            <i class='fas fa-map-marked-alt'><span>
+                                Av. Éxodo 464 entre San Antonio y El Carmen 4600 San Salvador de Jujuy, Argentina</span> </i>
                             <i class='fas fa-clock'><span>Abierto 08:00 a 13:00 y de 16:00 a 21:00</i></span>
                         </div>
                     </div>
@@ -1138,22 +1214,17 @@
                 <div class="sec5__map ">
                     <div id="map">
                         <div id="menu">
-                            <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
-                            <!-- See a list of Mapbox-hosted public styles at -->
-                            <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
-                            <label for="satellite-v9">satellite</label>
                             <input id="streets-v11" type="radio" name="rtoggle" value="streets">
                             <label for="streets-v11">streets</label>
+                            <!-- See a list of Mapbox-hosted public styles at -->
+                            <!-- https://docs.mapbox.com/api/maps/styles/#mapbox-styles -->
+                            <input id="satellite-v9" type="radio" name="rtoggle" value="satellite" checked="checked">
+                            <label for="satellite-v9">satellite</label>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <p>T-Web</p>
-                <!-- <i class='fas fa-code'></i> -->
-                <!-- <i class='fas fa-eye'></i> -->
-                <i class='fas fa-globe-americas'></i>
-            </div>
+
         </section>
     </main>
 
@@ -1209,7 +1280,7 @@
     <!-- MAPBOX -->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js'></script>
 
-    <script src="./js/map.js"></script>
+    <!-- <script src="./js/map.js"></script> -->
 
     <!-- CARRITO -->
     <script src='./js/carrito.js'></script>
