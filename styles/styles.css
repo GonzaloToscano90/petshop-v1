@@ -1599,6 +1599,7 @@ footer {
 
 .content__foo p {
   color: #ccc;
+  font-size: 10px;
 }
 
 .titulo-final {
