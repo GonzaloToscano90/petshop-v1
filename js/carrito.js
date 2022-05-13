@@ -63,7 +63,7 @@ function agregarArticuloCarrito(tituloArticulo, articuloImagen, articuloDescripc
             </div>
         </div>
         <div>
-            <button  onclick="sonidoEliminar.play()" class="borrar-curso" type='button'>X</button>
+            <button  onclick="sonidoEliminar.play()" class="borrar-curso" type='button'><img src="img/eliminar.png" alt="cancelar"></button>
         </div>
     </div>    
     `

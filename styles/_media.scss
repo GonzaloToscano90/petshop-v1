@@ -89,6 +89,10 @@
                 }
             }
         }
+        .sec2__botones {
+            min-width: 100%;
+            top: 20px;
+        }
     }
     .sec2__publicidad--grid {
         display: grid;
@@ -180,6 +184,15 @@
         min-height: 162vh;
         .sec5-info-contenido {
             flex-direction: row-reverse;
+            .sec5-info__iconos {
+                i {
+                    color: wheat;
+                    span {
+                        color: white;
+                        font-weight: bold;
+                    }
+                }
+            }
             .back-img {
                 height: 400px;
             }
